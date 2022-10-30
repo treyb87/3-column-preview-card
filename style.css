@@ -1,0 +1,87 @@
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    /* padding: 0 15%; */
+}
+
+h2{
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 2em;
+    
+}
+    
+.container{
+    display: flex;
+    margin: auto;
+    width 80vw;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column ;
+    padding: 2em;
+    max-width: 200px;
+    min-height: 400px;
+    /* width: minmax(300px auto)
+    height: minmax(auto 600px); */
+}
+
+.img{
+    width: 50px;
+}
+h2{
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    color:  hsla(0, 0%, 100%, 0.75);
+
+}
+.sedan-card{
+    background-color:  hsl(31, 77%, 52%);
+}
+.suv-card{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-card{
+    background-color: hsl(179, 100%, 13%);
+}
+a{
+    color: hsl(0, 0%, 95%);
+    padding: .5em 1em;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 4em;
+    margin-bottom: 0;
+}
+
+.sedan-btn:hover {
+    background-color: hsl(0, 0%, 95%);
+    color:hsl(31, 77%, 52%)
+}
+a:hover .suv-btn{
+    background-color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        height: 300px;
+    }
+    
+}
